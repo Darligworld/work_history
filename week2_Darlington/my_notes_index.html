@@ -1,0 +1,256 @@
+HTML LECTURES
+HTML stands for HyperText Markup Language and is used to create the structure and content of a webpage.
+Most HTML elements contain opening and closing tags with raw text or other HTML tags between them.
+Single-closing tags cannot enclose raw text or other elements.
+Comments are written in HTML using the following syntax: <!-- comment -->.
+HTML elements can be nested inside other elements. The enclosed element is the child of the enclosing parent element.
+Whitespace between HTML elements helps make code easier to read while not changing how elements appear in the browser.
+Indentation also helps make code easier to read. It makes parent-child relationships visible.
+The <!DOCTYPE html> declaration should always be the first line of code in your HTML files.
+The <html> element will contain all of your HTML code.
+Information about the web page, like the title, belongs within the <head> of the page.
+You can add a title to your web page by using the <title> element, inside of the head.
+A webpage's title appears in a browser's tab.
+Code for visible HTML content is placed inside of the <body> element.
+
+Videos
+In addition to images, HTML also supports displaying videos. Like the <img> tag, the <video> tag requires a src attribute with a link to the video source. Unlike the <img> tag however, the <video> element requires an opening and a closing tag.
+<video src="myVideo.mp4" width="320" height="240" controls>
+ Video not supported
+</video>
+In this example, the video source (src=) is "myVideo.mp4." The source must link to a video file, not to a video on another site. After the src attribute, the width and height attributes are used to set the size of the video displayed in the browser. The controls attribute instructs the browser to include basic video controls: pause, play and skip. The text, Video not supported, between the opening and closing video tags will only be displayed if the browser is unable to load the video.
+1.
+Under the image, add the following video:
+https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4
+Use the same height and width as the example above. Make sure to include the controls attribute.
+If the image and video appear next to each other, you may separate them with a line break (<br />), if you wish!
+You're off to a great start! So far you've learned how to add headings, paragraphs, lists, images, and videos to a web page. We wouldn't be taking advantage of the full power of HTML (and the Internet), however, if we didn't link to other web pages.
+You can add links to a web page by adding an anchor element <a> and including the text of the link in between the opening and closing tags.
+<a>This Is A Link To Wikipedia</a>
+Wait a minute! Technically, the link in the example above is incomplete. How exactly is the link above supposed to work if there is no URL that will lead users to the actual Wikipedia page?
+The anchor element in the example above is incomplete without the href attribute. This attribute stands for hyperlink reference and is used to link to a file path, or the address to where a file is located (whether it is on your computer or another location).
+<a href="https://www.wikipedia.org/">This Is A Link To Wikipedia</a>
+In the example above, the href attribute has been set to the value of the URL https://www.wikipedia.org/. The example now shows the correct use of an anchor element.
+Note: When reading technical documentation, you may come across the term hyperlink. Not to worry, this is simply the technical term for link. These terms are often used interchangeably.
+
+Linking At Will
+You've probably visited websites where not all links were made up of text. Maybe the links you clicked on were images, or some other form of content.
+So far, we've added links that were made up of only text, like the following:
+<a href="https://en.wikipedia.org/wiki/Opuntia" target="_blank">Prickly Pear</a>
+Text-only links, however, would significantly decrease your flexibility as a web developer!
+Thankfully, HTML allows you to turn nearly any element into a link by wrapping that element with an anchor element. With this technique, it's possible to turn images into links by simply wrapping the <img> element with an <a> element.
+<a href="https://en.wikipedia.org/wiki/Opuntia" target="_blank"><img src="#" alt="A red prickly pear fruit"/></a>
+In the example above, an image of a prickly pear has been turned into a link by wrapping the outside of the <img> element with an <a> element.
+1.
+In index.html, transform the image on your page into a link by wrapping the image element with an anchor element. Set the target attribute so that the link opens in a new window.
+Use the same URL as before:
+https://en.wikipedia.org/wiki/Brown_bear
+
+Relative
+ Many sites also link to internal web pages like Home, About, and Contact.
+Before we learn how to link between internal pages, let's establish where our files are stored. When making multi-page static websites, web developers often store HTML files in the root directory, or a main folder where all the files for the project are stored. As the size of the projects you create grows, you may use additional folders within the main project folder to organize your code.
+about.html
+contact.html
+index.html
+The example above shows three different files — about.html, contact.html, and index.html in one folder.
+If the browser is currently displaying index.html, it knows that about.html and contact.html are in the same folder as index.html, also referred to as the current folder. Since the browser knows the current folder, other files in the folder can be linked using a relative path.
+A relative path is a filename that shows the path to a local file (a file on the same website, such as ./index.html) versus an absolute path (a full url, like www.codecademy.com/learn/ruby which is stored in a different folder). The ./ in ./index.html tells the browser to look for the file in the current folder.
+<a href="./contact.html">Contact</a>
+In this example, the <a> tag is used with a relative path to link from the current HTML file to the contact.html file in the same folder. On the web page, Contact will appear as a link.
+
+Same Page
+we have all the content we want on our page. Since we have so much content, it doesn't all fit on the screen. How do we make it easier for a user to jump to different portions of our page?
+When users visit our site, we want them to be able to click a link and have the page automatically scroll to a specific section.
+In order to link to a target on the same page, we must give the target an id, like this:
+<p id="top"> This is the top of the page! </p>
+<h1 id="bottom">This is the bottom! </h1>
+In this example, the <p> element contains id of top and the <h1> element contains id of bottom. An id can be added to most elements on a webpage.
+An id should be descriptive to make it easier to remember the purpose of a link. The target link is a string containing the # character and the target element's id.
+<ol>
+  <li><a href="#top">Top</a></li>
+  <li><a href="#bottom">Bottom</a></li>
+</ol>
+In the example above, the links to <p id="top"> and <h1 id="bottom"> are embedded in an ordered list. These links appear in the browser as a numbered list of links. This is why we have been adding ids to our divs all along!
+Table Rows
+In many programs that use tables, the table is already predefined for you, meaning that it contains the rows, columns, and cells that will hold data. In HTML, all of these components must be created.
+The first step in entering data into the table is to add rows using the table row element: <tr>.
+<table>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+</table
+In the example above, two rows have been added to the table.
+
+Table Data
+Rows aren't sufficient to add data to a table. Each cell element must also be defined. In HTML, you can add data using the table data element: <td>.
+<table>
+  <tr>
+    <td>73</td>
+    <td>81</td>
+  </tr>
+</table>
+In the example above, two data points (73 and 81) were entered in the one row that exists. By adding two data points, we created two cells of data.
+If the table were displayed in the browser, it would show a table with one row and two columns.
+
+Table Headings
+Table data doesn't make much sense without titles to describe what the data represents.
+To add titles to rows and columns, you can use the table heading element: <th>.
+The table heading element is used just like a table data element, except with a relevant title. Just like table data, a table heading must be placed within a table row.
+<table>
+  <tr>
+    <th></th>
+    <th scope="col">Saturday</th>
+    <th scope="col">Sunday</th>
+  </tr>
+  <tr>
+    <th scope="row">Temperature</th>
+    <td>73</td>
+    <td>81</td>
+  </tr>
+</table>
+What happened in the code above?
+First, a new row was added to hold the three headings: a blank heading, a Saturday heading, and a Sunday heading. The blank heading creates the extra table cell necessary to align the table headings correctly over the data they correspond to.
+In the second row, one table heading was added as a row title: Temperature.
+Note, also, the use of the scope attribute, which can take one of two values:
+row - this value makes it clear that the heading is for a row.
+col - this value makes it clear that the heading is for a column.
+HTML code for tables may look a little strange at first, but analyzing it piece by piece helps make the code more understandable.
+
+Table Borders
+So far, the tables you've created have been a little difficult to read because they have no borders.
+In older versions of HTML, a border could be added to a table using the border attribute and setting it equal to an integer. This integer would represent the thickness of the border.
+<table border="1">
+  <tr>
+    <td>73</td>
+    <td>81</td>
+  </tr>
+</table>
+The code in the example above is following is deprecated, so please don't use it. It's meant to illustrate older conventions you may come across when reading other developers' code.
+The browser will likely still interpret your code correct if you use the border attribute, but that doesn't mean the attribute should be used. Instead, you can achieve the same effect using CSS.
+table, td {
+  border: 1px solid black;
+}
+The code in the example above uses CSS instead of HTML to show table borders.
+
+Spanning Columns
+What if the table contains data that spans multiple columns?
+For example, a personal calendar could have events that span across multiple hours, or even multiple days.
+Data can span columns using the colspan attribute. The attributes accepts an integer (greater than or equal to 1) to denote the number of columns it spans across.
+<table>
+  <tr>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+  </tr>
+  <tr>
+    <td colspan="2">Out of Town</td>
+    <td>Back in Town</td>
+  </tr>
+</table>
+In the example above, the data Out of Town spans the Monday and Tuesday table headings using the value 2 (two columns). The data Back in Town appear only under the Wednesday heading
+
+Spanning Rows
+Data can also span multiple rows using the rowspan attribute.
+The rowspan attribute is used for data that spans multiple rows (perhaps an event goes on for multiple hours on a certain day). It accepts an integer (greater than or equal to 1) to denote the number of rows it spans across.
+<table>
+  <tr> <!-- Row 1 -->
+    <th></th>
+    <th>Saturday</th>
+    <th>Sunday</th>
+  </tr>
+  <tr> <!-- Row 2 -->
+    <th>Morning</th>
+    <td rowspan="2">Work</td>
+    <td rowspan="3">Relax</td>
+  </tr>
+  <tr> <!-- Row 3 -->
+    <th>Afternoon</th>
+  </tr>
+  <tr> <!-- Row 4 -->
+    <th>Evening</th>
+    <td>Dinner</td>
+  </tr>
+</table>
+In the example above, there are four rows:
+The first row contains an empty cell and the two column headings.
+The second row contains the Morning row heading, along with Work, which spans two rows under the Saturday column. The "Relax" entry spans three rows under the Sunday column.
+The third row only contains the Afternoon row heading.
+The fourth row only contains the Dinner entry, since "Relax" spans into the cell next to it.
+If you'd like to see how the browser interprets the code above, feel free to copy and paste it into the code editor to understand it a little better
+
+Table Body
+Over time, a table can grow to contain a lot of data and become very long. When this happens, the table can be sectioned off so that it is easier to manage.
+Long tables can be sectioned off using the table body element: <tbody>.
+The <tbody> element should contain the all of the table's data, excluding the table headings (more on this in a later exercise).
+<table>
+  <tbody>
+    <tr>
+      <th></th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+    <tr>
+      <th>Morning</th>
+      <td rowspan="2">Work</td>
+      <td rowspan="3">Relax</td>
+    </tr>
+    <tr>
+     <th>Afternoon</th>
+    </tr>
+    <tr>
+      <th>Evening</th>
+      <td>Dinner</td>
+    </tr>
+  </tbody>
+</table>
+In the example above, all of the table data is contained within a table body element. Note, however, that the headings were also kept in the table's body — we'll change this in the next exercise.
+
+Table Footer
+The bottom part of a long table can also be sectioned off using the <tfoot> element.
+<table>
+  <thead>
+    <tr>
+      <th>Quarter</th>
+      <th>Revenue</th>
+      <th>Costs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Q1</th>
+      <td>$10M</td>
+      <td>$7.5M</td>
+    </tr>
+    <tr>
+      <th>Q2</th>
+      <td>$12M</td>
+      <td>$5M</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Total</th>
+      <td>$22M</td>
+      <td>$12.5M</td>
+    </tr>
+  </tfoot>
+</table>
+In the example above, the footer contains the totals of the data in the table. Footers are often used to contain sums, differences, and other data results
+https://gist.github.com/09b2d2001b4e4f3097e256a191e1c9e4
+
+
+
+HTML Tables
+The <table> element creates a table.
+The <tr> element adds rows to a table.
+To add data to a row, you can use the <td> element.
+Table headings clarify the meaning of data. Headings are added with the <th> element.
+Table data can span columns using the colspan attribute.
+Table data can span rows using the rowspan attribute.
+Tables can be split into three main sections: a head, a body, and a footer.
+A table's head is created with the <thead> element.
+A table's body is created with the <tbody> element.
+A table's footer is created with the <tfoot> element.
+All the CSS properties you learned about in this course can be applied to tables and their data.
+Congratulations on completing HTML Tables!
