@@ -7,7 +7,12 @@
 // it takes a number as its first parameter returns `true` if the number is even
 // and `false` if it is not
 
-function isEven(num) {
+
+function isEven(value) {
+	if (value%2 == 0)
+		return true;
+	else
+		return false;
   // write you code here
 }
 
@@ -17,7 +22,13 @@ function isEven(num) {
 // that checks whether a num is a number and
 // console.log => "That is not a number", if it is not a number
 
-function isEvenV2(num) {
+  function isEvenV2(num) {
+    if (isNaN(num)) {
+      return true;
+    } else {
+    return false;
+  }
+
   // write you code here
 }
 
@@ -31,6 +42,21 @@ function isEvenV2(num) {
 
 function getLunchOrder(lunchOrder) {
   switch(lunchOrder){
+    case 'sandwich':
+      console.log("Sure thing! One sandwich, coming up.")
+      break;
+      case "soup":
+        console.log("Got it! Tomato's my favorite.")
+        break;
+        case "salad":
+        console.log("Sounds good! How about a caesar salad?")
+          break;
+          case "pie":
+            console.log("Pie's not a meal!")
+            break;
+            case "default":
+              console.log("How does a sandwich sound?")
+              break;
     // write you code here
   }
 }
@@ -40,6 +66,12 @@ function getLunchOrder(lunchOrder) {
 // to "tired" or "sleepy" and `false` if it is not
 
 function shouldINap(mood) {
+  if (mood === tired || sleepy ) {
+    console.log(true);
+  }else {
+    console.log(false);
+  }
+
   // write you code here
 }
 
@@ -48,5 +80,10 @@ function shouldINap(mood) {
 // then console.log => "Go use that energy and learn more javascript ;)"
 
 function shouldINapV2(mood) {
+  if (mood === "energetic") {
+    console.log(true);
+  }else {
+    console.log(false);
+  }
   // write you code here
 }

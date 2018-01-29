@@ -8,14 +8,59 @@
   }
 
   OR
+  */
 
-  const {{name_of_function}} = () => {
-    // Write your code here
+  const multiplyByNineFifths = (celsius) => {
+  return celsius * (9/5);
+};
+const getFahrenheit = (celsius) => {
+  return multiplyByNineFifths(celsius) + 32;
+};
+console.log('The temperature is ' + getFahrenheit(15) + '°F');
+
+
   }
+  const subtractbyone = (15) => {
+    console.log(15 -=);
+  };
+  const additionbyone = (15) => {
+    console.log(15 ++=);
+  };
+  const getAddition = (numberOne, numberTwo) => {
+  const addition = (numberOne + numberTwo);
+  return average;
+}
+console.log(getAddition(365, 27));
+
+const square = (number) => {
+  return number * number;
+}
+console.log(square(7));
+
+
+function isOdd(x) {
+  if (!isEven(x); ) {
+    return true
+  } else {
+    return false
+  }
+};
+
+const bestFood = ('rice', 'salad') => {
+  console.log('my best foods are' + bestFood;);
+};
+
+function circleArea(radius) {
+    let area = Math.PI * (radius * radius);
+    console.log(area);
+
+
+
+  // Write your code here
 
   ```
-*/
 
+/**
 // 1. write a function that takes a number as a parameter and returns it as a
 // string
 
@@ -40,3 +85,4 @@
 // 8. write a function that takes the radius of a circle a parameter and returns
 // the Area of the circle.
 // For this exercise π (pie) can equal `3.14`
+*/
