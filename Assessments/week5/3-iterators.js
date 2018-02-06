@@ -13,13 +13,16 @@
   }
 
   OR
+  */
+  const week = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+    week.forEach(function(week) {
+    console.log(week);
+  });
 
-  const {{name_of_function}} = () => {
-    // Write your code here
-  }
-
-  ```
-*/
+  let longDays = week.filter(function(week) {
+  return week.length > 6;
+}
+/**
 
 const week = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
 
@@ -34,7 +37,13 @@ const hasDaysLongerThanSixLetters = /** erase this then write your coode here*/
 // 3. Using the `filter` function complete the instructions below:
 // Filter the weeks array for all the days that are longer than six letters
 
-const filteredDaysLongerThanSixLetters = /** erase this then write your coode here*/
+const week = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+
+const filteredDaysLongerThanSixLetters = week.filter(function(week) {
+return week.length > 6;
+});
+
+
 
 // 4. Using the `map` function complete the instructions below:
 // create a new array that has all the days captialized
@@ -42,4 +51,8 @@ const filteredDaysLongerThanSixLetters = /** erase this then write your coode he
 // HINT - use `toUpperCase` function to captialize strings
 // https://www.w3schools.com/jsref/jsref_touppercase.asp
 
-const arrayOfCapitalizedDays = /** erase this then write your coode here*/
+const week = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+
+let arrayOfCapitalizedDays = week.map(function(week) {
+  return week.toUpperCase();
+});

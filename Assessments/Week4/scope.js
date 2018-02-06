@@ -28,7 +28,7 @@ function run3() {
   console.log(a);
 }
 run3()
-// Answer = error
+// Answer = 2
 
 // What will the below functions console log? And in what order?
 // ex: First => 10, Second => 4
@@ -40,7 +40,7 @@ function run4() {
 }
 run4();
 console.log(a);​
-// Answer = 7
+// Answer = 6
 
 const a = 6;
 function run5() {
@@ -55,4 +55,4 @@ function run5() {
 run5();
 console.log(a);​  // Third
 
-// Answer = 8, error, 6
+// Answer =first = 8, second = 7, third = 6

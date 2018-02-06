@@ -20,10 +20,10 @@ console.log('The temperature is ' + getFahrenheit(15) + '°F');
 
 
   }
-  const subtractbyone = (15) => {
+  const SubtractByOne = (15) => {
     console.log(15 -=);
   };
-  const additionbyone = (15) => {
+  const additionByOne = (15) => {
     console.log(15 ++=);
   };
   const getAddition = (numberOne, numberTwo) => {
@@ -38,27 +38,56 @@ const square = (number) => {
 console.log(square(7));
 
 
+function isEven(value) {
+	if (value%2 == 0)
+		return true;
+	else
+		return false;
+
+
 function isOdd(x) {
   if (!isEven(x); ) {
     return true
   } else {
     return false
   }
+
 };
 
 const bestFood = ('rice', 'salad') => {
-  console.log('my best foods are' + bestFood;);
+  return bestFood
+
+
+
+function getTwoStrings()
+{
+    return ['string1', 'string2'];
+}
+
+let values = getTwoValues();
+alert("string 1 is " + string[0]);
+alert("string 2 is " + string[1]);
+
+
 };
 
 function circleArea(radius) {
     let area = Math.PI * (radius * radius);
-    console.log(area);
-
+    return area;
+    }
+    var circle = {};
+circle.radius = 2;
+circle.circumference = function() {
+    return Math.PI * 2 * this.radius;
+}
+circle.area = function() {
+    return Math.PI * this.radius * this.radius;
+}
 
 
   // Write your code here
 
-  ```
+
 
 /**
 // 1. write a function that takes a number as a parameter and returns it as a

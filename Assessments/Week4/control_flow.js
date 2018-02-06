@@ -21,13 +21,18 @@ function isEven(value) {
 // Use Number.isNan to extend your `isEven` function by including an `else if` statement
 // that checks whether a num is a number and
 // console.log => "That is not a number", if it is not a number
-
-  function isEvenV2(num) {
-    if (isNaN(num)) {
+function isEven(value) {
+	if (value%2 == 0)
+		return true;
+	else
+		return false;
+  function number.isEvenV2(num) {
+    if (number.isNaN(num)) {
       return true;
     } else {
     return false;
-  }
+   }
+ };
 
   // write you code here
 }
@@ -44,19 +49,19 @@ function getLunchOrder(lunchOrder) {
   switch(lunchOrder){
     case 'sandwich':
       console.log("Sure thing! One sandwich, coming up.")
-      break;
-      case "soup":
-        console.log("Got it! Tomato's my favorite.")
-        break;
-        case "salad":
-        console.log("Sounds good! How about a caesar salad?")
-          break;
-          case "pie":
-            console.log("Pie's not a meal!")
-            break;
-            case "default":
-              console.log("How does a sandwich sound?")
-              break;
+    break;
+    case "soup":
+      console.log("Got it! Tomato's my favorite.")
+    break;
+    case "salad":
+      console.log("Sounds good! How about a caesar salad?")
+    break;
+    case "pie":
+      console.log("Pie's not a meal!")
+    break;
+    case "default":
+      console.log("How does a sandwich sound?")
+    break;
     // write you code here
   }
 }
@@ -66,7 +71,7 @@ function getLunchOrder(lunchOrder) {
 // to "tired" or "sleepy" and `false` if it is not
 
 function shouldINap(mood) {
-  if (mood === tired || sleepy ) {
+  if (mood === "tired" || mood === "sleepy" ) {
     console.log(true);
   }else {
     console.log(false);
@@ -80,10 +85,13 @@ function shouldINap(mood) {
 // then console.log => "Go use that energy and learn more javascript ;)"
 
 function shouldINapV2(mood) {
-  if (mood === "energetic") {
-    console.log(true);
-  }else {
-    console.log(false);
-  }
+	  if (mood === "tired" || mood === "sleepy" ) {
+	  console.log(true);
+	} else if (mood === "energetic") {
+    console.log("Go use that energy and learn more javascript true");
+  } else {
+		console.log(false);
+	}
+
   // write you code here
 }

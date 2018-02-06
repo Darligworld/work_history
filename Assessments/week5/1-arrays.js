@@ -6,15 +6,19 @@
   function {{name_of_function}} {
     // Write your code here
   }
+  */
 
   OR
 
-  const {{name_of_function}} = () => {
-    // Write your code here
-  }
+  let newYearsResolutions = ['Run a marathon', 'Learn a new language', 'Read 52 books'];
+  console.log(newYearsResolutions [0]);
 
-  ```
-*/
+  let newYearsResolutions = ['Run a marathon', 'Learn a new language', 'Read 52 books'];
+  console.log(newYearsResolutions [2]);
+
+
+
+/**
 
 // 1. write a function that takes an array as its first parameter and returns
 // the first item in the array
