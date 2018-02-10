@@ -57,7 +57,7 @@ function students(names, searchValue) {
 
 // answre 6
 function Variables(array, searchValue, replaceValue){
-  for let (arrayIndex = 0; arrayIndex <= index.length; arrayIndex++){
+  for (let arrayIndex = 0; arrayIndex <= index.length; arrayIndex++){
     if (arrayIndex === searchValue){
       let a = array.indexof(searchValue);
       array.splice(a, 1, replaceValue);
