@@ -29,6 +29,42 @@
         }
   };
 
+//answer 4
+names = ['Obinna', 'uchenna', 'chioma', 'Darlington', 'Grace' ]
+searchValue = 'Darlington'
+function students(names, searchValue) {
+  for let(namesIndex = 0; namesIndex < names.length; namesIndex++){
+    if (names[namesIndex] === searchValue) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
+  }
+};
+
+ //answer 5
+ function Variables(array, replaceValue) {
+   for (let arrayIndex = 0, arrayIndex <= array.length; arrayIndex++){
+     if (arrayIndex !== replaceValue){
+       let a - array.indexof(array[arrayIndex]);
+       array.splice(a, 1, replace);
+
+
+     }else {}
+     console.log(array);
+   }variables(['Lagos', 'Abuja', 'Owerri', 'Enugu'] 'States');
+ }
+
+// answre 6
+function Variables(array, searchValue, replaceValue){
+  for let (arrayIndex = 0; arrayIndex <= index.length; arrayIndex++){
+    if (arrayIndex === searchValue){
+      let a = array.indexof(searchValue);
+      array.splice(a, 1, replaceValue);
+      console.log(array);
+    }else {}
+  }
+}variables(['Lagos', 'Abuja', 'Owerri','Enugu',] 'States', 'Abuja');
 /**
 
 // 1. write a function that takes an array as its first parameter and console logs
