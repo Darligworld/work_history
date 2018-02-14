@@ -10,11 +10,18 @@
   OR
 */
 // answer 1
-  let newYearsResolutions = ['Rappel into a cave', 'Take a falconry class'];
+  newYearsResolutions = ['Rappel into a cave', 'Take a falconry class'];
+  function newYearsResolutions {
+    return(newYearsResolutions)
+  }
     console.log(newYearsResolutions);
 
 // answer 2
-    const oddNumbers = [1,2,34,54,55,34,32,11,19,17,54,66,13].filter((number) => number%2!==0);
+    numbers = [1,2,34,54,55,34,32,11,19,17,54,66,13]
+    function numbers {
+      for oddNumbers.filter((number) => number%2!==0);
+      return(oddNumbers)
+    }
     console.log(oddNumbers);
 
 //answer 3
@@ -24,7 +31,6 @@
     for (let i = 0; i < nums.length; i++) {
 
         if ((nums[i] % 2) != 1) {
-            evens.push(nums[i]);
                 console.log(evens);
         }
   };
@@ -33,7 +39,7 @@
 names = ['Obinna', 'uchenna', 'chioma', 'Darlington', 'Grace' ]
 searchValue = 'Darlington'
 function students(names, searchValue) {
-  for let(namesIndex = 0; namesIndex < names.length; namesIndex++){
+  for let(namesIndex = 4; namesIndex < names.length; namesIndex++){
     if (names[namesIndex] === searchValue) {
       console.log(true);
     } else {
@@ -43,28 +49,31 @@ function students(names, searchValue) {
 };
 
  //answer 5
+ array = ['Lagos', 'Abuja', 'Owerri', 'Enugu'];
+ replaceValue = ('States')
  function Variables(array, replaceValue) {
    for (let arrayIndex = 0, arrayIndex <= array.length; arrayIndex++){
      if (arrayIndex !== replaceValue){
        let a - array.indexof(array[arrayIndex]);
-       array.splice(a, 1, replace);
-
-
-     }else {}
-     console.log(array);
-   }variables(['Lagos', 'Abuja', 'Owerri', 'Enugu'] 'States');
+     }else {
+       console.log(array);
+     }
+   }
  }
 
 // answre 6
+array = ['Lagos', 'Abuja', 'Owerri','Enugu',];
+searchValue = 'Abuja'
+replaceValue = 'capital'
 function Variables(array, searchValue, replaceValue){
   for (let arrayIndex = 0; arrayIndex <= index.length; arrayIndex++){
     if (arrayIndex === searchValue){
       let a = array.indexof(searchValue);
       array.splice(a, 1, replaceValue);
       console.log(array);
-    }else {}
+    }
   }
-}variables(['Lagos', 'Abuja', 'Owerri','Enugu',] 'States', 'Abuja');
+}
 /**
 
 // 1. write a function that takes an array as its first parameter and console logs

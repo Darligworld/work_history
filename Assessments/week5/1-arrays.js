@@ -9,14 +9,51 @@
   */
 
   OR
+// answer 1
+  game = ['football', 'baseball', 'baskeball', 'soccar',];
+  event(game);
+  function event(game) {
+    return game.slice(0, 1);
+  }
 
-  let newYearsResolutions = ['Run a marathon', 'Learn a new language', 'Read 52 books'];
-  console.log(newYearsResolutions [0]);
+// answer 2
+guestList = ['Emmanuel', 'Juliet', 'Xzonchin', 'Johnson', 'Ray',];
+event(guestList);
+function event(guestList) {
+  return guestList.slice(-1);
+}
 
-  let newYearsResolutions = ['Run a marathon', 'Learn a new language', 'Read 52 books'];
-  console.log(newYearsResolutions [2]);
+// answer 3
+randomNumber = [2, 5, 7, 9, 10, 16];
+value = 3;
+variable(randomNumber, value);
+function variable(randomNumber,value) {
+  randomNumber.unshift(value);
+  let newRandomNumber = randomNumber;{
+    return newRandomNumber;
+  }
+};
 
+// answer 4
+array = [2, 4, 6, 8, 10];
+value = 14;
+variable(array,value)
+function variable(array, value){
+  array.push(value);
+  let newArray = array; {
+    return newArray;
+  }
+};
 
+// answer 5
+age = [5, 10. 15, 20, 25,];
+value = 5;
+index = 1;
+variable(age, value, index);
+function variable(age, value, index) {
+  age[1] = value
+  return age;
+}
 
 /**
 

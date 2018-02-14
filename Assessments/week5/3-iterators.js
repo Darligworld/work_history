@@ -19,7 +19,7 @@
     console.log(week);
   });
 
-  let longDays = week.filter(function(week) {
+  let longDays = week(function(week) {
   return week.length > 6;
 }
 /**
