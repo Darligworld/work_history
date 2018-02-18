@@ -3,23 +3,29 @@ concepts from Section 2 of the video lectures. Answer them in YOUR OWN WORDS.
 Fill free to provide examples to help illustrate your train of thought.
 
 1. What is a syntax parser?
-
+It is a program that reads codes and determines what it does and if its grammer is valid
 2. What is a lexical environment?
-
+It is where something sits physically in the code you write. lexical means having to do with words or grammer. A lexical environment exists in programming language in which where you write something is important,
 3. What is the execution context?
-
+This is the default execution context in which JS code start it’s execution when the file first loads in the browser. All the global code are executed inside global execution context. In the browser context, if the code is executing in strict mode value of this is undefined else it is window object. Global execution context cannot be more than one because only one global environment is possible for JS code execution.
 4. What are name/value pairs?
-
-5. What is an Object?
+It is a name which maps to a unique value, that name maybe defined more than once, but only can have one value in a given context.
+5. What is an Object
+An object is a collection of name/value pairs
 
 6. What does it mean that something is "Global"?
-
+This is a thing that is accessible everywhere to everything in the code. it can also mean not inside a function i.e. codes and variables that is not inside a function
 7. Explain how hoisting works in Javascript.
+when the parsing starts running through your code to read where you created variable and where function is, so it sets up in the creation phase a memory space for the variables and functions. it is that step that is hoisting, it is not physical moving of code to the top of the page. All it means is that before codes begins to be executed line by line the javascript engine has already set aside memory space for the variables and all of the functions that you created i.e those variables and functions exists in memory
 
 8. What does undefined mean?
+In JS when we see undefined; it is a special value in JS, it shows that the value has not been set yet or has not been assigned a value yet.
 
 9. Explain the concept of Scope?
+ may be defined as where the compiler looks for variables and functions when it needs them
 
 10. Javascript is single threaded. What does this mean?
+It means that one command is executed at a time
 
 11. What is the difference between synchronous and asynchronous?
+the difference between synchronous and asynchronous is that synchronous deals with all events happening inside the javascript, while asynchronous deals with all event happening outside the JS, i.e. JS linking with rendering engine and HTTP request.

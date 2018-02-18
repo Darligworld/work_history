@@ -3,8 +3,16 @@ concepts from Section 3 of the video lectures. Answer them in YOUR OWN WORDS.
 Fill free to provide examples to help illustrate your train of thought.
 
 1. Javascript is a dynamically typed language. What does this mean?
+this means that in javascript you don't tell the engine what type of data a variables holds, it figures it out while the code is running. in javascript there is no keyword to tell the engine the type of data you want to put inside rather it figures it out.
 
 2. What is a primitive type? Explain each primitive type.
+This is a type of data that represent a single value, that is not an object. there are 6 types of it.
+Undefined; this represents lack of existence (we do not set variable to this rather we allow the engine to ultilize them)
+Null; it also represents lack of existence (we can set variables to this one)
+Booleans; they are either 'true' or 'false'.
+Number; this represents all numbers, its a floating point number (there is always some decimal).
+strings; this may be said to be a sequence of character. (both "" and '' may be used).
+symbole; It is used in ES6(the next version of JS)
 
 3. What are operators and operands?
 
