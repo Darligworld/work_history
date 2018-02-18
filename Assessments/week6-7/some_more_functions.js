@@ -20,10 +20,10 @@
 // EX1:
   // sample input: "Hello World"
   // sample output: 3
-  function getVowels(str) {
-  var vowelsCount = 0;
-  var string = str.toString();
-  for (var i = 0; i <= string.length - 1; i++) {
+function getVowels(str) {
+  let vowelsCount = 0;
+  let string = str.toString();
+  for (let i = 0; i <= string.length - 1; i++) {
     if (string.charAt(i) == "a" || string.charAt(i) == "e" || string.charAt(i) == "i" || string.charAt(i) == "o" || string.charAt(i) == "u") {
       vowelsCount += 1;
     }
@@ -61,13 +61,13 @@ console.log(getVowels("intercontinental"))
 // EX2:
   // sample input: "Hello World"
   // sample output: null
-  function first_half(obj){
- if(obj.length%2 == 0){
- let half = (obj.length/2);
- return obj.substring(0, half);
- }else{
- return null;
- }
+function first_half(obj){
+  if(obj.length%2 == 0){
+    let half = (obj.length/2);
+    return obj.substring(0, half);
+  }else{
+    return null;
+  }
 
  };
 
@@ -81,7 +81,7 @@ console.log(getVowels("intercontinental"))
 // EX:
   // sample input: [1, 7, 1, 4, 1, 6, 4, 5]
   // sample output: 29
-  let my_array = [4,6,7,7,3,7,3,5,5,7,10];
+let my_array = [4,6,7,7,3,7,3,5,5,7,10];
 function arraySum(array){
   let total = 0,
       len = array.length;
