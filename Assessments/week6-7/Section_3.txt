@@ -2,8 +2,8 @@ In this assessment, you will use will be tested on your knowledge of javascript
 concepts from Section 3 of the video lectures. Answer them in YOUR OWN WORDS.
 Fill free to provide examples to help illustrate your train of thought.
 
-1. Javascript is a dynamically typed language. What does this mean?
-this means that in javascript you don't tell the engine what type of data a variables holds, it figures it out while the code is running. in javascript there is no keyword to tell the engine the type of data you want to put inside rather it figures it out.
+1. JavaScript is a dynamically typed language. What does this mean?
+this means that in JavaScript you don't tell the engine what type of data a variables holds, it figures it out while the code is running. in javascript there is no keyword to tell the engine the type of data you want to put inside rather it figures it out.
 
 2. What is a primitive type? Explain each primitive type.
 This is a type of data that represent a single value, that is not an object. there are 6 types of it.
@@ -12,12 +12,14 @@ Null; it also represents lack of existence (we can set variables to this one)
 Booleans; they are either 'true' or 'false'.
 Number; this represents all numbers, its a floating point number (there is always some decimal).
 strings; this may be said to be a sequence of character. (both "" and '' may be used).
-symbole; It is used in ES6(the next version of JS)
+symbol; It is used in ES6(the next version of JS)
 
 3. What are operators and operands?
-
+operators are special functions that is syntactically (or written) differently, operators takes two parameters and returns one result, example, +, -, <, >, etc. are all Operators.
 4. In what order does operators get called?
-
+operator gets called in order of operator precedence and associativity, i.e. the operator with highest value in precedence list is first called, then followed by the associativity whether from right to left or left to write.
 5. What does it mean when a value is coerced?
+It is the converting of a value from one type to another example is the process whereby the JS engine converts booleans to a number value. This happens because JS is a dynamically typed language.
 
 6. What is the difference between '==' and '==='?
+'==' and  '===' are used to check if two values are equal, but '==' do coerce the values (e.g. when a string lets say '5' and a number 5 is compared with '==' it will return true because it coersed the string into nmber) which causes a strange error because of the unexpected ways in which it behaves and it is considered as the negative side of JS language, while '===' strictly check if two values are equal each other without any equal to
