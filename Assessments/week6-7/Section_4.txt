@@ -3,22 +3,30 @@ concepts from Section 4 of the video lectures. Answer them in YOUR OWN WORDS.
 Fill free to provide examples to help illustrate your train of thought.
 
 1. What are the ways to access methods or properties on an object?
-
+the ways in which we can access methods and properties on an object is the use of member access operators which includes bracket operators "[]" and the Dot operator ".", but the prefared way is the dot operator cause of the easy to read and cleanness.
 2. How do you initialize an Object literal?
+it is initialized with the use of curry brace.
 
 3. What is a Namespace? How does Javascript handle Namespacing?
+Namespace is a container for variables and functions. It is typically to keep variables and functions with the same name separated. JS does not have name space, we fake it in JS, we do this by creating an object that will contain the name space. it is called Container Object.
 
 4. What is a JSON? What are some of the Javascript functions used to parse and encode JSON?
+JSON stands for 'JavaScript Object Notation'. JavaScript function used to parse and encode JSON is Object literal syntax, when it is JSON it expected all properties to be wrapped inquote
 
 5. What are first class functions?
+first class function simply means that you can do with other types like objects, strings, boolean, numbers etc. you can do with functions like, assign them variables, pass them around, create them on the fly. you can pass functions around as parameter to other functions. First class function changes change's the way we can program.
 
 6. Explain the difference between a function statement and expression.
+function statement just does work and doesn't return  values, while function expression is a unit of code that result in a value, it doesn't have to be saved to a variable.
 
 7. What does it mean to be passed by value? What types are passed by value?
+By value is copying or setting a value equal to another value, by copying the value the variables becomes the same by copying the value into two separate sports in the memory. the type passed by value are Primitives
 
 8. What does it mean to be passed by reference? What types are passed by reference?
+by reference  behave differently from by value in that, all objects interact by setting them equal to each other or passing through a function and these can cause problems. The type passed by reference are object and function.
 
 9. What is the `this` variable?
+'this' variable is a global variable that is used to attach variable to global variable, when ever a function is created on a code 'this' variable will point to global object.
 
 10. What is an array? How are they different in Javascript than in other languages?
 
