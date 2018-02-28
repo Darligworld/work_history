@@ -42,16 +42,21 @@ console.log(getVowels("intercontinental"))
 // EX2:
   // sample input: "he"
   // sample output: "HE"
-  let plant = ['Orange'];
-  let str = plant.join();
-  function greenWorld(str) {
-      if (str.length <= 3) {
-        return str.toLowerCase();
-      } else {
-        return (str.slice(0,4).toUpperCase() + str.slice(4));
-      }
-    }
-  console.log(greenWorld(str));
+  function upperToLowerCase(array) {
+  let str = array.join();
+  if (str.length < 3) {
+    return str.toUpperCase();
+  } else {
+    return (str.slice(0,3).toUpperCase() + str.slice(3));
+  }
+}
+
+let plant = ['Orange'];
+console.log(upperToLowerCase(plant));
+
+let pronoun = ['he'];
+console.log(upperToLowerCase(pronoun));
+
 // 3. write a function that takes a string as it first parameter. This function
 // returns the first half of the string if the string is even length. Otherwise,
 // it will return null;
@@ -61,7 +66,7 @@ console.log(getVowels("intercontinental"))
 // EX2:
   // sample input: "Hello World"
   // sample output: null
-function first_half(obj){
+function firstHalf(obj){
   if(obj.length%2 == 0){
     let half = (obj.length/2);
     return obj.substring(0, half);
@@ -71,8 +76,8 @@ function first_half(obj){
 
  };
 
- console.log(first_half("Enye"));
- console.log(first_half("Grace"));
+ console.log(firstHalf("Enye"));
+ console.log(firstHalf("Grace"));
 
 
 
@@ -81,7 +86,7 @@ function first_half(obj){
 // EX:
   // sample input: [1, 7, 1, 4, 1, 6, 4, 5]
   // sample output: 29
-let my_array = [4,6,7,7,3,7,3,5,5,7,10];
+let myArray = [4,6,7,7,3,7,3,5,5,7,10];
 function arraySum(array){
   let total = 0,
       len = array.length;
@@ -90,7 +95,7 @@ function arraySum(array){
   }
   return total;
 };
-console.log( arraySum( my_array ) );
+console.log( arraySum( myArray ) );
 
 
 // 5. write a function that takes an array of numbers as its first parameter.

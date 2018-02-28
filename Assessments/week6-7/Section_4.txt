@@ -29,14 +29,20 @@ by reference  behave differently from by value in that, all objects interact by 
 'this' variable is a global variable that is used to attach variable to global variable, when ever a function is created on a code 'this' variable will point to global object.
 
 10. What is an array? How are they different in Javascript than in other languages?
+An array is a collection that can hold many things inside of it, it is declared with '[]'. in JS we can reference things in an array and they can even hold functions
 
 11. What are function arguments? What is the keyword that Javascript gives you to
 access a function's arguments?
+Arguments functions contains a list of all the values of all the parameters that you pass to a function. so Arguments holds all those values that is passed to what ever function you are calling.
 
 12. What is an IIFE? How can they be useful?
+Immediately Invoked Function Expressions (IIFE); it is the process of invoking a function expression immediately after its creation. they help make our function expression ready available and make our code readable, clear and help us minimize the amount of code being written.
 
 13. Explain closures. How can you use them to your advantage in Javascript?
+A closure is an inner function that has access to the outer (enclosing) function’s variables—scope chain. The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function’s variables, and it has access to the global variables.
 
 14. What is a callback function?
+A callback function, also known as a higher-order function, is a function that is passed to another function (let’s call this other function “otherFunction”) as a parameter, and the callback function is called (or executed) inside the otherFunction.
 
 15. What does call(), apply() and bind() help you control?
+ They all help us control how our function are manipulated and applied.

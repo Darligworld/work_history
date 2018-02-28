@@ -16,6 +16,8 @@ symbol; It is used in ES6(the next version of JS)
 
 3. What are operators and operands?
 operators are special functions that is syntactically (or written) differently, operators takes two parameters and returns one result, example, +, -, <, >, etc. are all Operators.
+operands can be defined as Forming JavaScript sentences is called writing statements. Statements are mostly made up of operands (which are like nouns) and operators (which are like verbs). 
+
 4. In what order does operators get called?
 operator gets called in order of operator precedence and associativity, i.e. the operator with highest value in precedence list is first called, then followed by the associativity whether from right to left or left to write.
 5. What does it mean when a value is coerced?
